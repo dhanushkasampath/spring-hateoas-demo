@@ -1,0 +1,97 @@
+{
+	"info": {
+		"_postman_id": "47ccfa4b-61dc-41c9-b006-dd3f666f2f68",
+		"name": "spring-hateoas",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "1579445",
+		"_collection_link": "https://lunar-robot-431494.postman.co/workspace/Personal~f08ef686-6af6-4318-88d7-bf43c8beefc2/collection/1579445-47ccfa4b-61dc-41c9-b006-dd3f666f2f68?action=share&source=collection_link&creator=1579445"
+	},
+	"item": [
+		{
+			"name": "add-to-cart",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/rest/products/cart/add/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"rest",
+						"products",
+						"cart",
+						"add",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "show-cart",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/rest/products/cart",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"rest",
+						"products",
+						"cart"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "view-products",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/rest/products/all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"rest",
+						"products",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "product-by-id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/rest/products/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"rest",
+						"products",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
