@@ -1,0 +1,74 @@
+//In this HAL response:
+
+//The _embedded section contains the list of resources (in this case, products).
+//The _links section contains hypermedia links for each product and for the entire collection.
+
+{
+  "_embedded": {
+    "productList": [
+      {
+        "id": 1,
+        "name": "Gas Cooker",
+        "price": 1000,
+        "_links": { // hypermedia links for each product
+          "self": {
+            "href": "http://localhost:8081/rest/products/1"
+          },
+          "addToCart": {
+            "href": "http://localhost:8081/rest/products/cart/add/1"
+          }
+        }
+      },
+      {
+        "id": 2,
+        "name": "Washing Machine",
+        "price": 7000,
+        "_links": {
+          "self": {
+            "href": "http://localhost:8081/rest/products/2"
+          },
+          "addToCart": {
+            "href": "http://localhost:8081/rest/products/cart/add/2"
+          }
+        }
+      },
+      {
+        "id": 3,
+        "name": "Toaster",
+        "price": 2000,
+        "_links": {
+          "self": {
+            "href": "http://localhost:8081/rest/products/3"
+          },
+          "addToCart": {
+            "href": "http://localhost:8081/rest/products/cart/add/3"
+          }
+        }
+      },
+      {
+        "id": 4,
+        "name": "Blender",
+        "price": 4000,
+        "_links": {
+          "self": {
+            "href": "http://localhost:8081/rest/products/4"
+          },
+          "addToCart": {
+            "href": "http://localhost:8081/rest/products/cart/add/4"
+          }
+        }
+      }
+    ]
+  },
+  "_links": {  //hypermedia links for entire collection
+    "self": {
+      "href": "http://localhost:8081/rest/products/hateoas/all"
+    },
+    "without-links": {
+      "href": "http://localhost:8081/rest/products/all"
+    },
+    "cart": {
+      "href": "http://localhost:8081/rest/products/cart"
+    }
+  }
+}
